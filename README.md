@@ -3,7 +3,7 @@
 ## Thématique
 
 ### Contexte
-Aucune base de donnée sur le sujet n'existe. C'est donc à moi de la crée en effectuant un travail de recherche et de collecte afin de trouver des données pértinantes et instructives. 
+Aucune base de donnée sur le sujet n'existe. C'est donc à moi de la créer en effectuant un travail de recherche et de collecte afin de trouver des données pértinantes et instructives. 
 
 
 ### Description
@@ -26,3 +26,8 @@ Mon but est de partager ma passion pour la géographie, les cartes et toutes les
 
 ### Référence
 Je n'ai vu ou trouver personne traiter de ce sujet sous cette forme. Aucune base de donnée n'existe, raison pour laquelle je l'ai constituée moi même. Ce sujet est très spécifique et peu documenté. 
+
+
+
+## Wireframe
+Vous trouverez le wireframe dans le même dossier que le ficier README.
