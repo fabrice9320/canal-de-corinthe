@@ -30,4 +30,4 @@ Je n'ai vu ou trouver personne traiter de ce sujet sous cette forme. Aucune base
 
 
 ## Wireframe
-Vous trouverez le wireframe dans le même dossier que le ficier README.
+Vous trouverez le wireframe dans le même dossier rendu.
