@@ -1,0 +1,86 @@
+
+-------------
+<text class="construction_date_start text_step4" x="50%" y="10%" text-anchor="middle"></text>
+<text class="construction_date_end text_step4" x="50%" y="20%" text-anchor="middle"></text>
+<text class="distance_saved text_step4" x="30%" y="30%" text-anchor="middle"></text>
+-------------
+<text class="boatOneLength text_step4" x="50%" y="30%" text-anchor="middle"></text>
+<text class="boatOneWidth text_step4" x="50%" y="40%" text-anchor="middle"></text>
+<text class="boatBiggestLength text_step4" x="50%" y="50%" text-anchor="middle"></text>
+<text class="boatBiggestWidth text_step4" x="50%" y="60%" text-anchor="middle"></text>
+-------------
+document.querySelector('#step4 .boatOneLength').textContent = data.boats[0].length;
+document.querySelector('#step4 .boatOneWidth').textContent = data.boats[0].width;
+document.querySelector('#step4 .boatBiggestLength').textContent = data.boats[1].length;
+document.querySelector('#step4 .boatBiggestWidth').textContent = data.boats[1].width;
+-------------
+<div class="step">
+        <svg id="step4" class="step">
+            <text x="10vh" y="24vh" class="text_step4" data-target="construction_dates"
+                font-size="20vh">CONSTRUCTION</text>
+            <text class="construction_dates text_step4" data-target="construction_dates" x="94%" y="63.25vh"
+                text-anchor="end" font-size="8vh"></text>
+
+            <text text-anchor="start" x="25%" y="71.5vh" class="text_step4" data-target="distance_saved"
+                font-size="10vh">DISTANCE
+                SAVED</text>
+            <text class="distance_saved text_step4" data-target="distance_saved" x="10vh" y="55vh" font-size="30vh"
+                text-anchor="start"></text>
+
+            <text text-anchor="middle" x="7.75%" y="76.5vh" class="text_step4 rotate90" data-target="length"
+                font-size="10vh">LENGTH</text>
+            <text class="length text_step4" data-target="length" x="42.25%" y="92.5vh" text-anchor="start"
+                font-size="25vh"></text>
+
+            <text text-anchor="end" x="94.5%" y="55vh" class="text_step4" data-target="width"
+                font-size="16vh">WIDTH</text>
+            <text class="width text_step4" data-target="width" x="95%" y="92.5vh" text-anchor="end"
+                font-size="38vh"></text>
+
+            <text text-anchor="start" x="25%" y="87.5vh" class="text_step4" data-target="height_max"
+                font-size="10vh">HEIGHT</text>
+            <text class="height_max text_step4" data-target="height_max" x="95%" y="36.5vh" font-size="38vh"
+                text-anchor="end"></text>
+
+            <text text-anchor="end" x="67%" y="72.5vh" class="text_step4 rotate90" data-target="depth"
+                font-size="15vh">DEPTH</text>
+            <text class="depth text_step4" data-target="depth" x="18%" y="92.5vh" text-anchor="middle"
+                font-size="45vh"></text>
+        </svg>
+    </div>
+-------------
+<div class="step">
+        <svg id="step4" class="step">
+            <text x="10vh" y="24vh" class="text_step4" data-target="construction_dates"
+                font-size="20vh">CONSTRUCTION</text>
+            <text class="construction_dates text_step4" data-target="construction_dates" x="25%" y="80vh"
+                text-anchor="start" font-size="6vh"></text>
+
+            <text text-anchor="start" x="25%" y="71.5vh" class="text_step4" data-target="distance_saved"
+                font-size="10vh">DISTANCE
+                SAVED</text>
+            <text class="distance_saved text_step4" data-target="distance_saved" x="10vh" y="55vh" font-size="30vh"
+                text-anchor="start"></text>
+
+            <text text-anchor="middle" x="7.75%" y="76.5vh" class="text_step4 rotate90" data-target="length"
+                font-size="10vh">LENGTH</text>
+            <text class="length text_step4" data-target="length" x="42.25%" y="92.5vh" text-anchor="start"
+                font-size="25vh"></text>
+
+            <text text-anchor="end" x="94.5%" y="55vh" class="text_step4" data-target="width"
+                font-size="16vh">WIDTH</text>
+            <text class="width text_step4" data-target="width" x="95%" y="92.5vh" text-anchor="end"
+                font-size="38vh"></text>
+
+            <text text-anchor="start" x="25%" y="92.5vh" class="text_step4" data-target="height_max"
+                font-size="10vh">HEIGHT</text>
+            <text class="height_max text_step4" data-target="height_max" x="95%" y="36.5vh" font-size="38vh"
+                text-anchor="end"></text>
+
+            <text text-anchor="end" x="67%" y="72.5vh" class="text_step4 rotate90" data-target="depth"
+                font-size="15vh">DEPTH</text>
+            <text class="depth text_step4" data-target="depth" x="18%" y="92.5vh" text-anchor="middle"
+                font-size="45vh"></text>
+        </svg>
+    </div>
+            

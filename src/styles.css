@@ -1,0 +1,279 @@
+@import url("/assets/fonts/Houschka/stylesheet.css");
+@import url("/assets/fonts/GTPressura/stylesheet.css");
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    flex-direction: column; */
+    font-family: 'GTPressuraRegular', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+    background-color: #FAF9F6;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    /* transform: translateX(-100%); */
+    /* transform: scale(0); */
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    /* transform: translateX(0); */
+    /* transform: scale(1); */
+}
+
+.step {
+    width: 100vw;
+    height: 100vh;
+    /* Pour que les formes soient positionnées correctement */
+}
+
+
+.step1-text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh;
+}
+
+.basPage-text {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    /* Pour placer le texte en bas de la page */
+    left: 5%;
+    width: 90%;
+}
+
+.title {
+    font-size: 12vh;
+    font-family: 'GTPressuraBold';
+    margin: 0;
+}
+
+.subTitle {
+    font-size: 6vh;
+    font-family: 'GTPressuraRegular';
+    margin: 0;
+}
+
+.basPage {
+    font-size: 3vh;
+    font-family: 'GTPressuraBold';
+    margin: 0;
+    margin-top: 38%;
+    color: #e6e6e6;
+}
+
+.basPage-text p {
+    transition: color 0.6s;
+    /* Ajoute une transition de couleur sur une durée de 0.6 seconde */
+}
+
+#map1 {
+    position: relative;
+    width: 50%;
+    height: 85%;
+    top: -25%;
+    bottom: 0;
+    left: 45%;
+}
+
+/* #map2 {
+    position: relative;
+    width: 40%;
+    height: 75%;
+    top: -20%;
+    bottom: 0;
+    left: 50%;
+} */
+
+#map2 {
+    position: relative;
+    width: 50vw;
+    /* 50% de la largeur de la vue */
+    height: 100vh;
+    /* 100% de la hauteur de la vue */
+    top: -35.75%;
+    bottom: 0;
+    left: 75%;
+    /* Déplace la carte vers la moitié droite */
+    transform: translateX(-50%);
+    /* Centre horizontalement la carte */
+}
+
+.pStep2 {
+    font-family: 'GTPressuraRegular', sans-serif;
+    color: #333;
+    font-size: 2.5vh;
+    width: 25%;
+    position: relative;
+    top: 50%;
+    left: 25%;
+    /* 1/4 de la largeur de la page */
+    transform: translate(-50%, -50%);
+    /* Centrage vertical et horizontal */
+    text-align: justify;
+}
+
+.pStep3 {
+    font-family: 'GTPressuraRegular', sans-serif;
+    color: #333;
+    font-size: 2.5vh;
+    width: 25%;
+    position: relative;
+    top: 50%;
+    left: 25%;
+    /* 1/4 de la largeur de la page */
+    transform: translate(-50%, -50%);
+    /* Centrage vertical et horizontal */
+    text-align: justify;
+}
+
+.text_step4 {
+    /* font-size: 16vh; */
+    font-family: 'GTPressuraBold';
+    fill: #e6e6e6;
+    transition: fill 0.6s;
+    /* font-size: 8vh; */
+}
+
+.text_step4_construction {
+    font-size: 20vh;
+    font-family: 'GTPressuraBold';
+    fill: #e6e6e6;
+    transition: fill 0.6s;
+}
+
+.rotate90 {
+    writing-mode: vertical-lr;
+}
+
+.text_step5 {
+    font-size: 6vh;
+    fill: #e6e6e6;
+    transition: fill 0.6s;
+    font-family: 'GTPressuraBold';
+}
+
+.text_step5-transition {
+    transition: fill 0.6s;
+}
+
+.text_big_step5 {
+    font-size: 34vh;
+    display: none;
+    fill: #333;
+    font-family: 'GTPressuraBold';
+}
+
+.text_big_step5_boat {
+    font-size: 18vh;
+    display: none;
+    fill: #333;
+    font-family: 'GTPressuraBold';
+}
+
+.text_big_step5_boat_2 {
+    font-size: 12vh;
+    display: none;
+    fill: #333;
+    font-family: 'GTPressuraBold';
+}
+
+.biggest_boat {
+    display: none;
+}
+
+.stepLast-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e6e6e6;
+    transition: color 0.6s;
+    text-decoration: none;
+    /* Supprimer le soulignement */
+    display: inline-block;
+    /* Assurer que le lien occupe seulement l'espace du texte */
+}
+
+#step1 {
+    background-color: #FAF9F6;
+}
+
+#step2 {
+    background-color: #FAF9F6;
+}
+
+#step3 {
+    background-color: #FAF9F6;
+}
+
+#step4 {
+    background-color: #FAF9F6;
+}
+
+#step5 {
+    background-color: #FAF9F6;
+}
+
+#step6 {
+    background-color: #FAF9F6;
+}
+
+
+
+
+/* #step1 {
+    background-color: blue;
+}
+
+#step2 {
+    background-color: aqua;
+}
+
+#step3 {
+    background-color: #FAF9F6;
+}
+
+#step4 {
+    background-color: #FAF9F6;
+}
+
+#step5 {
+    background-color: peru;
+}
+
+#step6 {
+    background-color: #34495e;
+} */

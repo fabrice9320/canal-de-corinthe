@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'GTPressuraRegularItalic';
+    src: url('GTPressuraRegular-Italic.woff2') format('woff2'),
+        url('GTPressuraRegular-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressuraMono';
+    src: url('GTPressuraMono-Light.woff2') format('woff2'),
+        url('GTPressuraMono-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressuraMonoItalic';
+    src: url('GTPressuraMono-LightItalic.woff2') format('woff2'),
+        url('GTPressuraMono-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressuraBold';
+    src: url('GTPressura-Bold.woff2') format('woff2'),
+        url('GTPressura-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressuraLightItalic';
+    src: url('GTPressura-LightItalic.woff2') format('woff2'),
+        url('GTPressura-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressuraRegular';
+    src: url('GTPressura.woff2') format('woff2'),
+        url('GTPressura.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressuraMonoRegularItalic';
+    src: url('GTPressuraMono-RegularItalic.woff2') format('woff2'),
+        url('GTPressuraMono-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressuraMonoBold';
+    src: url('GTPressuraMono-Bold.woff2') format('woff2'),
+        url('GTPressuraMono-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressuraBoldItalic';
+    src: url('GTPressura-BoldItalic.woff2') format('woff2'),
+        url('GTPressura-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressuraMonoBoldItalic';
+    src: url('GTPressuraMono-BoldItalic.woff2') format('woff2'),
+        url('GTPressuraMono-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressuraMonoRegular';
+    src: url('GTPressuraMono.woff2') format('woff2'),
+        url('GTPressuraMono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTPressuraLight';
+    src: url('GTPressura-Light.woff2') format('woff2'),
+        url('GTPressura-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

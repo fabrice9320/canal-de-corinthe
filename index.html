@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corinth Canal</title>
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="data" href="/data/data.json">
+    <script src="/src/index.js"></script>
+    <script src="https://unpkg.com/scrollama@2.0.0/dist/scrollama.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- <div class="step">
+            <svg id="step1" class="step">
+                <text text-anchor="middle" x="50%" y="50%" class="title">
+                    THE CORINTH CANAL
+                </text>
+                <text text-anchor="middle" x="50%" y="57%" class="subTitle">
+                    How man created an island
+                </text>
+            </svg>
+        </div> -->
+        <section class="hidden">
+            <div class="step" id="step1">
+                <div class="step1-text">
+                    <p class="title">THE CORINTH CANAL</p>
+                    <p class="subTitle">How man created an island</p>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="step">
+        <svg id="step2" class="step">
+            <text class="description" x="50%" y="40%" text-anchor="left" dominant-baseline="middle">
+                <tspan x="30%" dy="1.2em">Première ligne de texte.</tspan>
+                <tspan x="30%" dy="1.2em">Deuxième ligne de texte avec un retour à la ligne automatique.</tspan>
+                <tspan x="30%" dy="1.2em">Troisième ligne de texte.</tspan>
+            </text>
+        </svg>
+    </div> -->
+        <section class="hidden">
+            <div class="step" id="step2">
+                <p class="pStep2">
+                    The Corinth Canal, an engineering marvel nestled in Greece's landscape, showcases human ingenuity
+                    and
+                    bravery against
+                    nature's challenges. Carved through the Isthmus of Corinth, connecting the Gulf of Corinth to the
+                    Aegean
+                    Sea, this
+                    narrow canal has been a vital passage for global maritime trade.
+                </p>
+                <div id="map1"></div>
+            </div>
+        </section>
+
+        <!-- <div class="step">
+        <svg id="step3" class="step">
+
+        </svg>
+    </div> -->
+        <section class="hidden">
+            <div class="step" id="step3">
+                <p class="pStep3">
+                    Its construction, begun in 1882 and
+                    completed in 1893,
+                    was a daring endeavor, requiring decades of effort and technical progress. Stretching 6.4 kilometers
+                    in
+                    length and 25
+                    meters in width, the Corinth Canal significantly reduced the time and distance of voyages between
+                    the
+                    Adriatic and the
+                    Aegean Sea, thus marking a milestone in the history of navigation.
+                </p>
+                <div id="map2"></div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="step">
+                <svg id="step4" class="step">
+                    <text text-anchor="start" x="25%" y="70vh" class="text_step4" data-target="distance_saved"
+                        font-size="10vh">DISTANCE
+                        SAVED</text>
+                    <text class="distance_saved text_step4" data-target="distance_saved" x="10vh" y="53.5vh"
+                        font-size="30vh" text-anchor="start"></text>
+
+                    <text text-anchor="middle" x="7.75%" y="76.5vh" class="text_step4 rotate90" data-target="length"
+                        font-size="10vh">LENGTH</text>
+                    <text class="length text_step4" data-target="length" x="42.25%" y="92.5vh" text-anchor="start"
+                        font-size="25vh"></text>
+
+                    <text text-anchor="end" x="94.5%" y="53vh" class="text_step4" data-target="width"
+                        font-size="16vh">WIDTH</text>
+                    <text class="width text_step4" data-target="width" x="95%" y="92.5vh" text-anchor="end"
+                        font-size="38vh"></text>
+
+                    <text text-anchor="start" x="25%" y="87.5vh" class="text_step4" data-target="height_max"
+                        font-size="10vh">HEIGHT</text>
+                    <text class="height_max text_step4" data-target="height_max" x="95%" y="36.5vh" font-size="38vh"
+                        text-anchor="end"></text>
+
+                    <text text-anchor="end" x="67%" y="71vh" class="text_step4 rotate90" data-target="depth"
+                        font-size="15vh">DEPTH</text>
+                    <text class="depth text_step4" data-target="depth" x="18%" y="92.5vh" text-anchor="middle"
+                        font-size="45vh"></text>
+
+                    <text x="10vh" y="24vh" class="text_step4" data-target="construction_dates"
+                        font-size="20vh">CONSTRUCTION</text>
+                    <text class="construction_dates text_step4" data-target="construction_dates" x="94%" y="61.25vh"
+                        text-anchor="end" font-size="8vh"></text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- <div class="step" id="step4">
+        <p class="text_step4_construction" data-target="construction_dates">CONSTRUCTION</p>
+        <p class="construction_dates text_step4" data-target="construction_dates"
+            style="text-anchor: end; font-size: 8vh;">
+        </p>
+
+        <p style="text-anchor: start; font-size: 10vh;">DISTANCE SAVED</p>
+        <p class="distance_saved text_step4" data-target="distance_saved" style="text-anchor: start; font-size: 30vh;">
+        </p>
+
+        <p class="text_step4 rotate90" data-target="length" style="text-anchor: middle; font-size: 10vh;">LENGTH</p>
+        <p class="length text_step4" data-target="length" style="text-anchor: start; font-size: 25vh;"></p>
+
+        <p class="text_step4" data-target="width" style="text-anchor: end; font-size: 16vh;">WIDTH</p>
+        <p class="width text_step4" data-target="width" style="text-anchor: end; font-size: 38vh;"></p>
+
+        <p style="text-anchor: start; font-size: 10vh;">HEIGHT</p>
+        <p class="height_max text_step4" data-target="height_max" style="text-anchor: end; font-size: 38vh;"></p>
+
+        <p class="text_step4 rotate90" data-target="depth" style="text-anchor: end; font-size: 15vh;">DEPTH</p>
+        <p class="depth text_step4" data-target="depth" style="text-anchor: middle; font-size: 45vh;"></p>
+    </div> -->
+
+        <section class="hidden">
+            <div class="step">
+                <svg id="step5" class="step">
+                    <text text-anchor="middle" x="50%" y="90%" class="text_step5" data-target="biggest_boat">
+                        BIGGEST SHIP
+                    </text>
+                    <text text-anchor="middle" x="50%" y="82%" class="text_step5" data-target="hours_of_operation">
+                        HOURS OF OPERATION
+                    </text>
+                    <text text-anchor="middle" x="50%" y="74%" class="text_step5" data-target="speed_limit">
+                        SPEED LIMIT
+                    </text>
+                    <text text-anchor="middle" x="50%" y="66%" class="text_step5" data-target="transit">
+                        TRANSIT PER YEAR
+                    </text>
+
+                    <image class="biggest_boat" href="assets/images/Biggest_Boat.svg" image-anchor="middle" x="30%"
+                        y="-5%" width="40%" height="40%" />
+                    <text class="biggest_boat text_big_step5_boat" x="50%" y="40%" text-anchor="middle">MS
+                        BRAEMAR</text>
+                    <text class="biggest_boat text_big_step5_boat_2" x="50%" y="52%" text-anchor="middle">196m x
+                        23m</text>
+
+
+                    <text class="hours_of_operation text_big_step5" x="50%" y="50%" text-anchor="middle"></text>
+                    <text class="speed_limit text_big_step5" x="50%" y="50%" text-anchor="middle"></text>
+                    <text class="transit text_big_step5" x="50%" y="50%" text-anchor="middle"></text>
+                </svg>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="step" id="step6">
+                <a href="#step1" class="title stepLast-text">START AGAIN</a>
+
+                <div class="basPage-text basPage">
+                    <p>FABRICE REGAMEY</p>
+                    <p>2024</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script type="module" src="/src/index.js"></script>
+
+</body>
+
+</html>

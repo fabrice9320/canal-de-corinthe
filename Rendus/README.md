@@ -3,7 +3,7 @@
 ## Thématique
 
 ### Contexte
-Aucune base de donnée sur le sujet n'existe. C'est donc à moi de la créer en effectuant un travail de recherche et de collecte afin de trouver des données pértinantes et instructives. 
+Aucune base de donnée sur le sujet n'existe. C'est donc à moi de la crée en effectuant un travail de recherche et de collecte afin de trouver des données pértinantes et instructives. 
 
 
 ### Description
@@ -15,8 +15,8 @@ Ce dernier comportera toutes les données de différent type telles que les loca
 
 
 Voici quelques sources d'où je pourrais tirer des données :
-- https://histochronum.com/accueil-1-copy/passages-maritimes-et-transport-maritime/le-canal-de-corinthe/
-- https://fr.wikipedia.org/wiki/Canal_de_Corinthe#:~:text=maritime%20de%20Corinthe-,En%20chiffres,de%20la%20p%C3%A9ninsule%20du%20P%C3%A9loponn%C3%A8se
+- https://histochronum.com/accueil-1-copy/passages-maritimes-et-transport-maritime/le-canal-de-corinthe/    
+- https://fr.wikipedia.org/wiki/Canal_de_Corinthe#:~:text=maritime%20de%20Corinthe-,En%20chiffres,de%20la%20p%C3%A9ninsule%20du%20P%C3%A9loponn%C3%A8se 
 - https://www.bateaux.com/article/32512/le-canal-de-corinthe-un-bras-de-mer-de-6-km-enclave-par-les-roches-calcaires
     
 
@@ -30,4 +30,3 @@ Je n'ai vu ou trouver personne traiter de ce sujet sous cette forme. Aucune base
 
 
 ## Wireframe
-Vous trouverez le wireframe dans le même dossier rendu.

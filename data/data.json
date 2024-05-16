@@ -1,0 +1,28 @@
+{
+    "construction_date_start": "1882",
+    "construction_date_end": "1893",
+    "construction_duraction": "11",
+    "distance_saved": "400'000",
+    "length": "6343",
+    "width": "25",
+    "height_max": "52",
+    "depth": "8",
+    "transit_per_year": "11000",
+    "speed_limit": "7 knot",
+    "hours_of_operation": "6am to 6pm",
+    "boats": [
+        {
+            "id": "first_boat",
+            "name": "Notre-Dame du Salut",
+            "origin": "FR",
+            "length": "110",
+            "width": "13"
+        },
+        {
+            "id": "biggest_boat",
+            "name": "MS Braemar",
+            "length": "196",
+            "width": "22.5"
+        }
+    ]
+}
