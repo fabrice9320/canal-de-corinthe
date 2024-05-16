@@ -39,14 +39,6 @@ fetch(dataLink)
 
 
 
-
-// ---------------------- Scrollama ------------------------------
-
-
-// ------------------------------------------------------------------
-
-
-
 // ---------------------- Version slide ------------------------------
 
 const observer = new IntersectionObserver((entries) => {
@@ -118,8 +110,18 @@ const map2 = new mapboxgl.Map({
 // make a function to zoom the map on the corinth canal
 function zoomToCorinthCanal() {
     map2.flyTo({
+        // center: [22.9586, 37.9404]
+        center: [22.986902, 37.933863],
+        // zoom: 12.70,
+        zoom: 10.5,
+        essential: true
+    });
+}
+
+function deZoomToCorinthCanal() {
+    map2.flyTo({
         center: [22.9586, 37.9404],
-        zoom: 12,
+        zoom: 1.5,
         essential: true
     });
 }
@@ -151,6 +153,27 @@ customObserver.observe(document.querySelector("#step3"))
 
 const hiddenElements2 = document.querySelectorAll('.hidden');
 hiddenElements2.forEach((el) => customObserver.observe(el));
+
+// ------------------------------------------------------------------
+
+
+// ---------------------- Déclencher le dézoom map2--------------------
+
+const exitObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting && entry.target.id === 'step3') {
+            setTimeout(() => resetMap(), 500); // Appel de la fonction de réinitialisation lorsque le step3 n'est plus visible
+        }
+    });
+}, {
+    threshold: 0.9
+});
+
+exitObserver.observe(document.querySelector("#step3"));
+
+function resetMap() {
+    setTimeout(() => deZoomToCorinthCanal(), 10);
+}
 
 // ------------------------------------------------------------------
 
