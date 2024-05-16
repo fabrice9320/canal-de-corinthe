@@ -80,7 +80,7 @@ const map1 = new mapboxgl.Map({
     style: 'mapbox://styles/fabrice9320/clvqnovp201oz01qrel70e53f',
     accessToken: MAPBOX_TOKEN,
     center: [22.9586, 37.9404], // Centered on Corinth Canal in Greece
-    zoom: 2,
+    zoom: 1.5,
     bearing: 0,
     pitch: 10,
     scrollZoom: false,
@@ -108,7 +108,7 @@ const map2 = new mapboxgl.Map({
     style: 'mapbox://styles/fabrice9320/clvqnovp201oz01qrel70e53f',
     accessToken: MAPBOX_TOKEN,
     center: [22.9586, 37.9404],
-    zoom: 2,
+    zoom: 1.5,
     // essential: true,
     bearing: 0,
     pitch: 10,
@@ -140,12 +140,14 @@ document.querySelector('.mapboxgl-control-container').remove();
 const customObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting && entry.target.id === 'step3') {
-            zoomToCorinthCanal(); // Appel de la fonction de zoom lorsque le step3 est visible
+            setTimeout(() => zoomToCorinthCanal(), 500); // Appel de la fonction de zoom lorsque le step3 est visible
         }
     });
 }, {
     threshold: 0.9
 });
+
+customObserver.observe(document.querySelector("#step3"))
 
 const hiddenElements2 = document.querySelectorAll('.hidden');
 hiddenElements2.forEach((el) => customObserver.observe(el));
