@@ -7,8 +7,8 @@
     "width": "25",
     "height_max": "52",
     "depth": "8",
-    "transit_per_year": "11000",
-    "speed_limit": "7 knot",
+    "transit_per_year": "11'000",
+    "speed_limit": "7 knots",
     "hours_of_operation": "6am to 6pm",
     "boats": [
         {
