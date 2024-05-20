@@ -93,6 +93,48 @@ document.querySelector('.mapboxgl-control-container').remove();
 // ------------------------------------------------------------------
 
 
+
+// ---------------------- Carte 2_5 --------------------------------------------
+
+
+const map2_5 = new mapboxgl.Map({
+    container: 'map2_5',
+    style: 'mapbox://styles/fabrice9320/clvqnovp201oz01qrel70e53f',
+    accessToken: MAPBOX_TOKEN,
+    center: [22.9586, 37.9404], // Centered on Corinth Canal in Greece
+    zoom: 1.5,
+    bearing: 0,
+    pitch: 10,
+    scrollZoom: false,
+    interactive: false
+});
+
+map2_5.addControl(new mapboxgl.NavigationControl());
+
+document.querySelector('.mapboxgl-control-container').remove();
+
+function zoomToPeloponnese() {
+    map2_5.flyTo({
+        // center: [22.9586, 37.9404]
+        center: [22.986902, 37.933863],
+        // zoom: 12.70,
+        zoom: 7,
+        essential: true
+    });
+}
+
+function deZoomToWorld() {
+    map2_5.flyTo({
+        center: [22.9586, 37.9404],
+        zoom: 1.5,
+        essential: true
+    });
+}
+
+
+// ------------------------------------------------------------------
+
+
 // ---------------------- Carte 2 --------------------------------------------
 
 const map2 = new mapboxgl.Map({
@@ -100,7 +142,7 @@ const map2 = new mapboxgl.Map({
     style: 'mapbox://styles/fabrice9320/clvqnovp201oz01qrel70e53f',
     accessToken: MAPBOX_TOKEN,
     center: [22.9586, 37.9404],
-    zoom: 1.5,
+    zoom: 7,
     // essential: true,
     bearing: 0,
     pitch: 10,
@@ -118,20 +160,58 @@ function zoomToCorinthCanal() {
     });
 }
 
-function deZoomToCorinthCanal() {
+function deZoomToPeloponnese() {
     map2.flyTo({
         center: [22.9586, 37.9404],
-        zoom: 1.5,
+        zoom: 7,
         essential: true
     });
 }
 
-// // use zoomToCorinthCanal when i scoll the page
-document.addEventListener('click', zoomToCorinthCanal);
-
 map2.addControl(new mapboxgl.NavigationControl());
 
 document.querySelector('.mapboxgl-control-container').remove();
+
+// ------------------------------------------------------------------
+
+
+// ---------------------- Déclencher le zoom map2_5  --------------------
+
+const customObserverMap2_5 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.target.id === 'step2_5') {
+            setTimeout(() => zoomToPeloponnese(), 500); // Appel de la fonction de zoom lorsque le step3 est visible
+        }
+    });
+}, {
+    threshold: 0.9
+});
+
+customObserverMap2_5.observe(document.querySelector("#step2_5"))
+
+const hiddenElementsMap2_5 = document.querySelectorAll('.hidden');
+hiddenElementsMap2_5.forEach((el) => customObserverMap2_5.observe(el));
+
+// ------------------------------------------------------------------
+
+
+// ---------------------- Déclencher le dézoom map2_5 --------------------
+
+const exitObserverMap2_5 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting && entry.target.id === 'step2_5') {
+            setTimeout(() => resetMap2_5(), 500); // Appel de la fonction de réinitialisation lorsque le step2_5 n'est plus visible
+        }
+    });
+}, {
+    threshold: 0.9
+});
+
+exitObserverMap2_5.observe(document.querySelector("#step2_5"));
+
+function resetMap2_5() {
+    setTimeout(() => deZoomToWorld(), 10); // Assurez-vous que la fonction deZoomToPeloponnese est définie
+}
 
 // ------------------------------------------------------------------
 
@@ -172,7 +252,7 @@ const exitObserver = new IntersectionObserver((entries) => {
 exitObserver.observe(document.querySelector("#step3"));
 
 function resetMap() {
-    setTimeout(() => deZoomToCorinthCanal(), 10);
+    setTimeout(() => deZoomToPeloponnese(), 10);
 }
 
 // ------------------------------------------------------------------
@@ -243,6 +323,27 @@ textElements.forEach(element => {
         });
 
         element.style.fill = '#e6e6e6'; // Couleur de texte claire par défaut
+    });
+});
+
+// ------------------------------------------------------------------
+
+
+// ---------------------- hover texte photos --------------------------------------------
+
+// Sélectionne tous les éléments .text_photos
+const textPhotos = document.querySelectorAll('.text_photos');
+
+// Parcourt chaque élément .text_photos
+textPhotos.forEach(textPhoto => {
+    // Ajoute un écouteur d'événements pour le survol
+    textPhoto.addEventListener('mouseenter', function () {
+        this.style.color = '#333'; // Modifie la couleur du texte au survol
+    });
+
+    // Ajoute un écouteur d'événements pour le départ du survol
+    textPhoto.addEventListener('mouseleave', function () {
+        this.style.color = '#e6e6e6'; // Rétablit la couleur du texte lorsque la souris quitte la zone
     });
 });
 

@@ -55,6 +55,7 @@ section {
     /* Pour que les formes soient positionnées correctement */
 }
 
+/* ------------------------------------------------------ */
 
 .step1-text {
     text-align: center;
@@ -62,6 +63,8 @@ section {
     align-items: center;
     margin-top: 35vh;
 }
+
+/* ------------------------------------------------------ */
 
 .basPage-text {
     display: flex;
@@ -73,17 +76,29 @@ section {
     width: 90%;
 }
 
+.basPage-text p {
+    transition: color 0.6s;
+    /* Ajoute une transition de couleur sur une durée de 0.6 seconde */
+}
+
+/* ------------------------------------------------------ */
+
 .title {
     font-size: 12vh;
     font-family: 'GTPressuraBold';
     margin: 0;
 }
 
+/* ------------------------------------------------------ */
+
 .subTitle {
     font-size: 6vh;
     font-family: 'GTPressuraRegular';
     margin: 0;
 }
+
+/* ------------------------------------------------------ */
+
 
 .basPage {
     font-size: 3vh;
@@ -93,10 +108,7 @@ section {
     color: #e6e6e6;
 }
 
-.basPage-text p {
-    transition: color 0.6s;
-    /* Ajoute une transition de couleur sur une durée de 0.6 seconde */
-}
+/* ------------------------------------------------------ */
 
 #map1 {
     position: relative;
@@ -107,14 +119,19 @@ section {
     left: 45%;
 }
 
-/* #map2 {
+#map2_5 {
     position: relative;
-    width: 40%;
-    height: 75%;
-    top: -20%;
+    width: 50vw;
+    /* 50% de la largeur de la vue */
+    height: 100vh;
+    /* 100% de la hauteur de la vue */
+    top: -35.75%;
     bottom: 0;
-    left: 50%;
-} */
+    left: 75%;
+    /* Déplace la carte vers la moitié droite */
+    transform: translateX(-50%);
+    /* Centre horizontalement la carte */
+}
 
 #map2 {
     position: relative;
@@ -130,6 +147,8 @@ section {
     /* Centre horizontalement la carte */
 }
 
+/* ------------------------------------------------------ */
+
 .pStep2 {
     font-family: 'GTPressuraRegular', sans-serif;
     color: #333;
@@ -144,6 +163,24 @@ section {
     text-align: justify;
 }
 
+/* ------------------------------------------------------ */
+
+.pStep2_5 {
+    font-family: 'GTPressuraRegular', sans-serif;
+    color: #333;
+    font-size: 2.5vh;
+    width: 25%;
+    position: relative;
+    top: 50%;
+    left: 25%;
+    /* 1/4 de la largeur de la page */
+    transform: translate(-50%, -50%);
+    /* Centrage vertical et horizontal */
+    text-align: justify;
+}
+
+/* ------------------------------------------------------ */
+
 .pStep3 {
     font-family: 'GTPressuraRegular', sans-serif;
     color: #333;
@@ -157,6 +194,8 @@ section {
     /* Centrage vertical et horizontal */
     text-align: justify;
 }
+
+/* ------------------------------------------------------ */
 
 .text_step4 {
     /* font-size: 16vh; */
@@ -176,6 +215,8 @@ section {
 .rotate90 {
     writing-mode: vertical-lr;
 }
+
+/* ------------------------------------------------------ */
 
 .text_step5 {
     font-size: 6vh;
@@ -213,6 +254,79 @@ section {
     display: none;
 }
 
+/* ------------------------------------------------------ */
+
+.containerPhotos {
+    display: flex;
+    justify-content: left;
+    /* Centrer horizontalement */
+    align-items: center;
+    /* Centrer verticalement */
+    height: 100vh;
+    /* Hauteur totale de la fenêtre */
+    padding-left: 20%;
+}
+
+.photo {
+    width: 70%;
+    /* 70% de la largeur du conteneur */
+    max-width: 100%;
+    /* S'assurer que l'image ne déborde pas */
+    height: auto;
+    /* Maintenir le ratio d'aspect */
+}
+
+.photo1 {
+    width: 50%;
+    /* Largeur personnalisée pour photo2 */
+}
+
+.photo2 {
+    width: 30%;
+    /* Largeur personnalisée pour photo2 */
+    padding-left: 5%;
+}
+
+.photo3 {
+    width: 30%;
+    /* Largeur personnalisée pour photo3 */
+    padding-left: 5%;
+}
+
+.text_photos {
+    font-size: 3vh;
+    font-family: 'GTPressuraBold';
+    margin: 0;
+    margin-top: 38%;
+    /* Positionnement personnalisé du texte */
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: color 0.6s;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh;
+}
+
+.text_photo1 {
+    padding-left: 2.5%;
+    padding-top: 5%;
+}
+
+.text_photo2 {
+    padding-left: 2.5%;
+    padding-top: 15%;
+}
+
+.text_photo3 {
+    padding-left: 2.5%;
+    padding-top: 15%;
+}
+
+
+/* ------------------------------------------------------ */
+
 .stepLast-text {
     text-align: center;
     position: relative;
@@ -226,6 +340,8 @@ section {
     display: inline-block;
     /* Assurer que le lien occupe seulement l'espace du texte */
 }
+
+/* ------------------------------------------------------ */
 
 #step1 {
     background-color: #FAF9F6;
@@ -248,6 +364,10 @@ section {
 }
 
 #step6 {
+    background-color: #FAF9F6;
+}
+
+#step7 {
     background-color: #FAF9F6;
 }
 
